@@ -3,82 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Raj Trivedi | Web Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100 text-gray-900">
-
-    <!-- Header -->
-    <header class="bg-white shadow-md p-6">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">My Portfolio</h1>
-            <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="#about" class="hover:text-blue-500">About</a></li>
-                    <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
-                    <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
-                    <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">Raj Trivedi</div>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-600">About</a></li>
+                <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+                <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="container mx-auto mt-10 p-6">
-        <h2 class="text-3xl font-bold mb-4">About Me</h2>
-        <p>Hello! I'm [Your Name], a web developer specializing in frontend and backend development. I love creating dynamic and responsive websites with a focus on user experience.</p>
+    <!-- Home Section -->
+    <section id="home" class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-teal-500 text-white">
+        <div class="text-center">
+            <h1 class="text-5xl font-bold mb-4">Raj Trivedi</h1>
+            <p class="text-xl mb-6">Entry-Level web developer with knowledge in front-end technologies such as HTML, CSS, JavaScript, and PHP, <br> strong skills in database management, data security, and encryption.</p>
+            <a href="#projects" class="px-6 py-3 bg-white text-blue-500 font-semibold rounded-md hover:bg-blue-100">View My Projects</a>
+        </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="bg-gray-200 py-10 mt-10">
-        <div class="container mx-auto p-6">
-            <h2 class="text-3xl font-bold mb-4">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Project 1 -->
-                <div class="bg-white shadow-md rounded-lg p-4">
-                    <img src="path-to-project-image.jpg" alt="Project 1" class="w-full rounded-lg">
-                    <h3 class="text-xl font-bold mt-4">Project Name</h3>
-                    <p class="text-gray-600">Description of the project. Explain what the project does and the technologies used.</p>
-                    <a href="#" class="text-blue-500 hover:underline mt-2 inline-block">View Project</a>
-                </div>
-                <!-- Add more projects similarly -->
-            </div>
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold mb-4">About Me</h2>
+            <p class="text-gray-600 text-lg max-w-3xl mx-auto">I'm Raj Trivedi, an aspiring web developer with experience in both front-end and back-end technologies. I have worked on mobile and web applications for the Jain Society of Waterloo Region and am passionate about building efficient and scalable applications.</p>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="container mx-auto py-10 mt-10">
-        <h2 class="text-3xl font-bold mb-4">Skills</h2>
-        <ul class="flex space-x-4">
-            <li class="bg-blue-100 text-blue-500 py-2 px-4 rounded">HTML5</li>
-            <li class="bg-blue-100 text-blue-500 py-2 px-4 rounded">CSS3</li>
-            <li class="bg-blue-100 text-blue-500 py-2 px-4 rounded">JavaScript</li>
-            <li class="bg-blue-100 text-blue-500 py-2 px-4 rounded">Django</li>
-            <li class="bg-blue-100 text-blue-500 py-2 px-4 rounded">MySQL</li>
-            <!-- Add more skills -->
-        </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="bg-gray-200 py-10 mt-10">
-        <div class="container mx-auto p-6">
-            <h2 class="text-3xl font-bold mb-4">Contact</h2>
-            <p>If you’d like to work with me, feel free to reach out using the form below.</p>
-            <form action="mailto:your-email@example.com" method="POST" class="mt-4">
-                <input type="text" name="name" placeholder="Your Name" class="border p-2 w-full mb-4">
-                <input type="email" name="email" placeholder="Your Email" class="border p-2 w-full mb-4">
-                <textarea name="message" placeholder="Your Message" class="border p-2 w-full mb-4"></textarea>
-                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Send Message</button>
-            </form>
+    <section id="skills" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold mb-8">My Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="skill-card bg-white p-6 shadow-md rounded-md">
+                    <h3 class="text-xl font-bold mb-2">HTML</h3>
+                    <p class="text-gray-600">Experienced in creating semantic and accessible HTML structures.</p>
+                </div>
+                <div class="skill-card bg-white p-6 shadow-md rounded-md">
+                    <h3 class="text-xl font-bold mb-2">CSS</h3>
+                    <p class="text-gray-600">Proficient in CSS and frameworks like Tailwind and Bootstrap.</p>
+                </div>
+                <div class="skill-card bg-white p-6 shadow-md rounded-md">
+                    <h3 class="text-xl font-bold mb-2">JavaScript</h3>
+                    <p class="text-gray-600">Experienced in writing dynamic and interactive web pages using JavaScript.</p>
+                </div>
+                <div class="skill-card bg-white p-6 shadow-md rounded-md">
+                    <h3 class="text-xl font-bold mb-2">PHP</h3>
+                    <p class="text-gray-600">Experienced in server-side scripting with PHP and CodeIgniter framework.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-white py-6 mt-10 text-center">
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold mb-8">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card bg-gray-100 p-6 shadow-md rounded-md">
+                    <h3 class="text-xl font-bold mb-2">Jain Society Project</h3>
+                    <p class="text-gray-600">Mobile and web app built for the Jain Society of Waterloo Region using PHP, MySQL, and Java.</p>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
 
-    <script src="app.js"></script>
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold mb-8">Contact Me</h2>
+            <form action="php/contact.php" method="POST" class="max-w-lg mx-auto bg-white p-8 shadow-md rounded-md">
+                <div class="mb-4">
+                    <label for="name" class="block text-left font-semibold mb-2">Name</label>
+                    <input type="text" name="name" id="name" class="w-full p-2 border border-gray-300 rounded-md" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-left font-semibold mb-2">Email</label>
+                    <input type="email" name="email" id="email" class="w-full p-2 border border-gray-300 rounded-md" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-left font-semibold mb-2">Message</label>
+                    <textarea name="message" id="message" class="w-full p-2 border border-gray-300 rounded-md" required></textarea>
+                </div>
+                <button type="submit" class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Raj Trivedi. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
