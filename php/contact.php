@@ -1,4 +1,6 @@
 <?php
+
+session_start();
 // Database credentials
 $servername = "localhost"; // or your server's IP
 $username = "root";        // your MySQL username
@@ -33,6 +35,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Message sent successfully!";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $to = "trivediraj650@gmail.com";  // Your email address
+    $subject = "New Contact Form Submission";
+    $body = "You received a new message from $name ($email):\n\n$message";
+    $headers = "From: $email";
+
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Message sent and email notification delivered!";
+    } else {
+        echo "Message sent, but email notification failed.";
     }
 }
 
