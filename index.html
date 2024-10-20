@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Trivedi | Full- Stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-gray-800 shadow-md">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-white">Raj Trivedi</div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover:text-teal-400 text-gray-200">Home</a></li>
+                <li><a href="#about" class="hover:text-teal-400 text-gray-200">About</a></li>
+                <li><a href="#skills" class="hover:text-teal-400 text-gray-200">Skills</a></li>
+                <li><a href="#projects" class="hover:text-teal-400 text-gray-200">Projects</a></li>
+                <li><a href="#contact" class="hover:text-teal-400 text-gray-200">Contact</a></li>
+            </ul>
+            <button class="md:hidden text-white focus:outline-none" id="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <ul class="mobile-menu hidden md:hidden flex flex-col space-y-4 bg-gray-800 p-4 text-center">
+            <li><a href="#home" class="hover:text-teal-400 text-gray-200">Home</a></li>
+            <li><a href="#about" class="hover:text-teal-400 text-gray-200">About</a></li>
+            <li><a href="#skills" class="hover:text-teal-400 text-gray-200">Skills</a></li>
+            <li><a href="#projects" class="hover:text-teal-400 text-gray-200">Projects</a></li>
+            <li><a href="#contact" class="hover:text-teal-400 text-gray-200">Contact</a></li>
+        </ul>
+    </header>    
+
+    <!--Home Section-->
+    <section id="home" class="h-screen flex items-center justify-center bg-gradient-to-r from-gray-700 to-gray-900 text-white">
+        <div class="text-center px-4">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Raj Trivedi</h1>
+            <p class="text-lg md:text-xl mb-6">Entry-Level Full-Stack developer with knowledge and experience in Python and it's framework and<br class="hidden md:block"> strong skills in database management, data security, and encryption.</p>
+            <a href="#projects" class="px-6 py-3 bg-teal-500 text-white font-semibold rounded-md hover:bg-teal-600">View My Projects</a>
+        </div>
+    </section>    
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-900 justify-center text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold mb-4">About Me</h2>
+            <p class="text-white text-lg max-w-3xl mx-auto">I'm Raj Trivedi, an aspiring web developer with experience in both front-end and back-end technologies. I have worked on mobile and web applications for the Projects and am passionate about building efficient and scalable applications.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-800 text-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold mb-8">My Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="skill-card bg-gray-700 p-6 shadow-md rounded-md">
+                    <h3 class="text-xl font-bold mb-2">HTML</h3>
+                    <p class="text-gray-300">Experienced in creating semantic and accessible HTML structures.</p>
+                </div>
+                <div class="skill-card bg-gray-700 p-6 shadow-md rounded-md">
+                    <h3 class="text-xl font-bold mb-2">CSS</h3>
+                    <p class="text-gray-300">Proficient in CSS and frameworks like Tailwind and Bootstrap.</p>
+                </div>
+                <div class="skill-card bg-gray-700 p-6 shadow-md rounded-md">
+                    <h3 class="text-xl font-bold mb-2">JavaScript</h3>
+                    <p class="text-gray-300">Experienced in writing dynamic and interactive web pages using JavaScript.</p>
+                </div>
+                <div class="skill-card bg-gray-700 p-6 shadow-md rounded-md">
+                    <h3 class="text-xl font-bold mb-2">PHP</h3>
+                    <p class="text-gray-300">Experienced in server-side scripting with PHP and Laravel framework.</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold mb-8 text-gray-100">My Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card bg-gray-800 p-6 shadow-md rounded-md">
+                    <h3 class="text-xl font-bold mb-2 text-white">Jain Society Project</h3>
+                    <p class="text-gray-400">Mobile and web app built for the Jain Society of Waterloo Region using PHP, MySQL, and Java.</p>
+                    <a href="https://example.com/jain-society-project" target="_blank" class="text-teal-400 font-semibold hover:text-teal-300">View Project</a>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-900 text-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold mb-8">Contact Me</h2>
+            <form action="php/contact.php" method="POST" class="max-w-lg mx-auto bg-gray-800 p-8 shadow-md rounded-md w-full">
+                <div class="mb-4">
+                    <label for="name" class="block text-left font-semibold mb-2">Name</label>
+                    <input type="text" name="name" id="name" class="w-full p-2 border border-gray-600 bg-gray-700 rounded-md text-white" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-left font-semibold mb-2">Email</label>
+                    <input type="email" name="email" id="email" class="w-full p-2 border border-gray-600 bg-gray-700 rounded-md text-white" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-left font-semibold mb-2">Message</label>
+                    <textarea name="message" id="message" class="w-full p-2 border border-gray-600 bg-gray-700 rounded-md text-white" required></textarea>
+                </div>
+                <button type="submit" class="px-6 py-3 bg-teal-500 text-white font-semibold rounded-md hover:bg-teal-600 w-full sm:w-auto">Send Message</button>
+            </form>
+        </div>
+    </section>    
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Raj Trivedi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            document.querySelector(".mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
